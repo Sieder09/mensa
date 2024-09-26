@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background-image: url(../Picture/Hintergrund\ 1.0.webp);
+    background-size: cover;
+    font-family: "Permanent Marker", sans-serif;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    margin: 20px 0; /* Abstand oben und unten */
+}
+
+.font {
+    color: white;
+}
+
+.picture {
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* Standardgröße für größere Bildschirme */
+}
+
+.picture img {
+    width: 100%; /* Bild nimmt 100% der Containerbreite ein */
+    height: auto; /* Höhe passt sich automatisch an */
+}
+
+@media (max-width: 768px) { /* Für Tablets */
+    .picture {
+        width: 80%; /* Breitere Darstellung auf Tablets */
+    }
+    
+    h1 {
+        font-size: 24px; /* Größere Schriftart auf kleineren Bildschirmen */
+    }
+}
+
+@media (max-width: 480px) { /* Für Handys */
+    .picture {
+        width: 90%; /* Breite auf Handys */
+    }
+    
+    h1 {
+        font-size: 20px; /* Kleinere Schriftart für Handys */
+    }
+    
+    body {
+        padding: 10px; /* Etwas Padding auf kleinen Bildschirmen */
+    }
+}
